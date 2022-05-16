@@ -593,7 +593,7 @@
             return lArm;
         }
 
-         function buildLLeg(WW, HH, DD) {
+        function buildLLeg(WW, HH, DD) {
             var geometry = new THREE.BufferGeometry();
             var vertices = [];
             var indices = [];
@@ -922,7 +922,7 @@
             return rLeg;
             }
 
-            function buildSteve() {
+        function buildSteve() {
             var loader = new THREE.TextureLoader();
             loader.setCrossOrigin('');
             texture = loader.load('https://i.imgur.com/kEHZ1Lo.png?3');
@@ -998,6 +998,7 @@
 
             // car update
             car.position.copy(pos);
+            //console.log(pos);
             car.rotation.y = angle + Math.PI / 2;
 
             switch (state) {
